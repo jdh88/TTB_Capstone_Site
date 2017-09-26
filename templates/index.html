@@ -1,0 +1,44 @@
+{% extends "layout.html" %} {% block content %}
+
+<div class="row">
+
+    <div class="col-lg-12 text-left">
+
+        <div class="starter-template">
+            <h1>Stock Ticker</h1>
+            <p class="lead">Use the field below to enter the ticker symbol for a company of interest.</p>
+        </div>
+
+        <form action "" method="post" name="ticker_symbol">
+            {{ form.hidden_tag() }}
+            <p>
+                Company symbol: {{ form.ticker_symbol(size=10) }}<br> {% for error in form.ticker_symbol.errors %}
+                <span style="color: red;">[{{ error }}]<span>
+            {% endfor %}
+        </p>
+        <p><input type="submit" value="SeeData"></p>
+
+      {% with messages = get_flashed_messages() %}
+          {% if messages %}
+            <ul>
+              {% for message in messages %}
+                  <li>{{ message }}</li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+      {% endwith %}
+
+      {% if bad_result %}
+        <span style="color: red;">[{{ bad_result }}]<span>
+      {% endif %}
+
+      {% if script %}
+          {{ script|safe }}
+          {{ div|safe }}
+      {% endif %}
+    </div>
+
+</div>
+
+
+{% endblock %}

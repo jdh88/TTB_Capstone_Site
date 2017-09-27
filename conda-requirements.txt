@@ -1,9 +1,0 @@
-pandas
-bokeh
-dill
-flask
-flask-wtf
-jinja2
-pip
-simplejson
-requests

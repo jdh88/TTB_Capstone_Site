@@ -68,4 +68,22 @@
     }
   });
 
+  // Magnific popup calls for inline divs
+  $('.popup-plot-gallery').magnificPopup({
+    delegate: 'a',
+    type: 'inline',
+    tLoading: 'Loading plot #%curr%...',
+    mainClass: 'mfp-img-mobile',
+    gallery: {
+      enabled: true,
+      navigateByImgClick: true,
+      preload: [0, 1]
+    },
+    image: {
+      tError: '<a href="%url%">The plot #%curr%</a> could not be loaded.'
+    }
+  });
+
+
+
 })(jQuery); // End of use strict

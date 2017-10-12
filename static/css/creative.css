@@ -342,3 +342,9 @@ header.masthead {
 
 .btn-xl {
   padding: 15px 30px; }
+
+/* Plot CSS */
+.plotly-plot-popup {
+    margin: auto;
+    width: 50%;
+}

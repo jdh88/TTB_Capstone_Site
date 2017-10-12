@@ -88,10 +88,10 @@
 
     <section class="p-0" id="analysis">
       <div class="container-fluid">
-        <div class="row no-gutter popup-gallery">
+        <div class="row no-gutter popup-plot-gallery">
 
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="./static/img/portfolio/fullsize/n_apps_per_state.png"
+            <a class="portfolio-box" href="#apps-by-state"
                title="California applied for approval more than 10,000 times.">
               <img class="img-fluid" src="./static/img/portfolio/thumbnails/n_apps_per_state.jpg" alt="">
               <div class="portfolio-box-caption">
@@ -107,7 +107,7 @@
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="./static/img/portfolio/fullsize/n_apps_per_type.png">
+            <a class="portfolio-box" href="#apps-by-type">
               <img class="img-fluid" src="./static/img/portfolio/thumbnails/n_apps_per_type.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
@@ -122,7 +122,7 @@
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="./static/img/portfolio/fullsize/n_pieces_of_art.png">
+            <a class="portfolio-box" href="#art-per-app">
               <img class="img-fluid" src="./static/img/portfolio/thumbnails/n_pieces_of_art.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
@@ -130,7 +130,7 @@
                     2016
                   </div>
                   <div class="project-name">
-                    Amount of Art
+                    Graphic Art per Application
                   </div>
                 </div>
               </div>
@@ -189,6 +189,16 @@
       </div>
     </section>
 
+    <!-- Plotly plots, hidden in a div -->
+    <div id="apps-by-state" class="mfp-hide plotly-plot-popup">
+    {% include './plots/ApplicationsByState.html'%}
+    </div>
+    <div id="apps-by-type" class="mfp-hide plotly-plot-popup">
+        {% include './plots/ApplicationsByType.html' %}
+    </div>
+    <div id="art-per-app" class="mfp-hide plotly-plot-popup">
+        {% include './plots/GraphicArtPerApplication.html' %}
+    </div>
 
     <div class="call-to-action bg-dark">
       <div class="container text-center">
@@ -223,5 +233,6 @@
         </div>
       </div>
     </section>
+
 
 {% endblock %}

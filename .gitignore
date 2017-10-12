@@ -106,4 +106,7 @@ ENV/
 !.elasticbeanstalk/*.global.yml
 
 # OSX
-*.DS_STORE
+.DS_STORE
+
+# PyCharm
+*.idea

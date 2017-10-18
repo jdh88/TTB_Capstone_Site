@@ -8,9 +8,9 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-@app.route('/pitch/')
+@app.route('/details/')
 def pitch():
-    return render_template('pitch.html')
+    return render_template('details.html')
 
 @app.route('/about')
 def about():

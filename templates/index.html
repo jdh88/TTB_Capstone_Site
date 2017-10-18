@@ -71,7 +71,7 @@
           <div class="col-lg-3 col-md-6 text-center">
             <div class="service-box">
               <i class="fa fa-4x fa-database text-primary sr-icons"></i>
-              <h3>Storing it all</h3>
+              <h3>Data Storage</h3>
               <p class="text-muted">To effeciently store of all of this information a database is necessary. In this case MongoDB helps out.</p>
             </div>
           </div>
@@ -100,7 +100,7 @@
                     2016
                   </div>
                   <div class="project-name">
-                    Approved applications by state
+                    Number of applications by state
                   </div>
                 </div>
               </div>
@@ -108,14 +108,14 @@
           </div>
           <div class="col-lg-4 col-sm-6">
             <a class="portfolio-box" href="#apps-by-type">
-              <img class="img-fluid" src="./static/img/portfolio/thumbnails/n_apps_per_type.jpg" alt="">
+              <img class="img-fluid" src="./static/img/portfolio/thumbnails/n_apps_per_gen_type.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
                     2016
                   </div>
                   <div class="project-name">
-                    Approved applications by type
+                    Number applications by type
                   </div>
                 </div>
               </div>
@@ -193,7 +193,7 @@
     {% include './plots/ApplicationsByState.html'%}
     </div>
     <div id="apps-by-type" class="mfp-hide plotly-plot-popup">
-        {% include './plots/ApplicationsByType.html' %}
+        {% include './plots/ApplicationsByGenType.html' %}
     </div>
     <div id="app-img-type-by-time" class="mfp-hide plotly-plot-popup">
         {% include './plots/ApplicationImagesOverTime.html' %}

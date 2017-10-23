@@ -349,3 +349,8 @@ header.masthead {
     justify-content: center;
     align-items: center;
 }
+
+.plotly-graph-div {
+    height: 600px;
+    width: 1000px;
+}

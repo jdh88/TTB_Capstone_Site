@@ -348,6 +348,7 @@ header.masthead {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .plotly-graph-div {

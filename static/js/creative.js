@@ -79,7 +79,7 @@
       navigateByImgClick: true,
       preload: [0, 1]
     },
-    image: {
+    inline: {
       tError: '<a href="%url%">The plot #%curr%</a> could not be loaded.'
     }
   });
